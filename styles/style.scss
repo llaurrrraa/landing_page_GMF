@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans:wght@100;300;400;500;600;700&display=swap');
+
+
+@-webkit-keyframes changeBg {
+   0%   {background-image: url("../assets/gif/Comp2_1025.png");}
+   5%   {background-image: url("../assets/gif/Comp2_1028.png");}
+   10%  {background-image: url("../assets/gif/Comp2_1057.png");}
+   15%  {background-image: url("../assets/gif/Comp2_1062.png");}
+   20%  {background-image: url("../assets/gif/Comp2_1065.png");}
+   25%  {background-image: url("../assets/gif/Comp2_1070.png");}
+   30%  {background-image: url("../assets/gif/Comp2_1086.png");}
+   35%  {background-image: url("../assets/gif/Comp2_1090.png");}
+   40% {background-image: url("../assets/gif/Comp2_1100.png");}
+   45% {background-image: url("../assets/gif/Comp2_1134.png");}
+   50% {background-image: url("../assets/gif/Comp2_1190.png");}
+   55% {background-image: url("../assets/gif/Comp2_1217.png");}
+   60% {background-image: url("../assets/gif/Comp2_1223.png");}
+   65% {background-image: url("../assets/gif/Comp2_1238.png");}
+   70% {background-image: url("../assets/gif/Comp2_1250.png");}
+   75% {background-image: url("../assets/gif/Comp2_1279.png");}
+   80% {background-image: url("../assets/gif/Comp2_1289.png");}
+   85% {background-image: url("../assets/gif/Comp2_1324.png");}
+   90% {background-image: url("../assets/gif/Comp2_1327.png");}
+   90% {background-image: url("../assets/gif/Comp2_1391.png");}
+   95% {background-image: url("../assets/gif/Comp2_1391.png");}
+   100% {background-image: url("../assets/gif/Comp2_1391.png");}
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  cursor: url("../assets/img/mouse.svg"),auto;
+  font-family: 'Noto Sans', sans-serif;
+  height: 100%;
+
+  .main{
+    position: relative;
+    z-index: 30;
+    .b-section{
+      .bg-gif{
+        -webkit-animation: changeBg 7s infinite;
+        width: 20rem;
+        height: 38rem;
+        background-size: contain;
+        border-radius: 0.5rem;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .bgc{
+    background-color: #000;
+    position: absolute;
+    top:0;
+    width:100vw;
+    .box{
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+    &:before{
+      content: "";
+      position: fixed;
+      top: 0; left: 0; bottom: 0; right: 0;
+      backdrop-filter: blur(120px);
+      z-index: 1;
+    }
+  }
+}
+
+
+
